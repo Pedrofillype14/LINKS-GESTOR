@@ -1,2 +1,230 @@
-# LINKS-GESTOR
-Links úteis para gestores
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central de Links Úteis - GESTORES</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 0.3rem;
+    }
+
+    .link-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .link-card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #1e3a8a;
+    }
+
+    .link-card a {
+      text-decoration: none;
+      background-color: #2563eb;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .link-card a:hover {
+      background-color: #1e40af;
+    }
+
+    /* Submenu bonito e padronizado */
+    .submenu {
+      display: none;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 0.6rem;
+      padding-left: 1rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .submenu-item {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      padding: 0.8rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+    }
+
+    .submenu-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    .submenu-item span {
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+
+    .submenu-item a {
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .submenu-item a:hover {
+      background-color: #1e40af;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>📎 Central de Links Úteis</header>
+
+  <main>
+    <!-- ====================== -->
+    <!-- 💼 SEÇÃO: APPS -->
+    <!-- ====================== -->
+    <h2>📱 APPS</h2>
+
+    <div class="link-card">
+      <h3>ADD</h3>
+      <a href="https://shorturl.at/IdsUA" target="_blank">Acessar</a>
+    </div>
+
+    <div class="link-card">
+      <h3>IPEO - Palma da Mão</h3>
+      <a href="https://shre.ink/ipeopalmadamao" target="_blank">Acessar</a>
+    </div>
+
+        <!-- ====================== -->
+    <!-- 🔗 SEÇÃO: LINKS -->
+    <!-- ====================== -->
+    <h2>🔗 Links</h2>
+
+    <!-- Card com submenu -->
+    <div class="link-card" onclick="toggleSubmenu('submenu-ll', this)">
+      <h3>Serviços Linha Viva Leve <span id="arrow">▾</span></h3>
+    </div>
+
+    <div id="submenu-ll" class="submenu">
+      <div class="submenu-item">
+        <span>Oeste</span>
+        <a href="https://forms.office.com/r/91h3n1qEv1" target="_blank">Acessar</a>
+      </div>
+      <div class="submenu-item">
+        <span>Centro</span>
+        <a href="https://forms.office.com/r/P0mgbUDB40" target="_blank">Acessar</a>
+      </div>
+      <div class="submenu-item">
+        <span>Leste</span>
+        <a href="https://forms.office.com/r/QDVxkcwPmv" target="_blank">Acessar</a>
+      </div>
+    </div>
+
+    <div class="link-card">
+      <h3>Projetos GD</h3>
+      <a href="https://energisa-my.sharepoint.com/personal/aucelio_energisa_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Faucelio%5Fenergisa%5Fcom%5Fbr%2FDocuments%2FVistoria%20GD%20Leste" target="_blank">Acessar</a>
+    </div>
+
+    <div class="link-card">
+      <h3>BY-PASS</h3>
+      <a href="https://forms.office.com/r/CSi9sx8i2c" target="_blank">Acessar</a>
+    </div>
+
+    <div class="link-card">
+      <h3>Leitor de KML/KMZ</h3>
+      <a href="https://pedrofillype14.github.io/kml/" target="_blank">Acessar</a>
+    </div> 
+
+    <div class="link-card">
+      <h3>Lista de KMZ e KML</h3>
+      <a href="https://energisa.sharepoint.com/:f:/r/sites/COECEPB/Documentos%20Compartilhados/LISTA%20DE%20KMZ?csf=1&web=1&e=I5FWsW" target="_blank">Acessar</a>
+    </div>
+    
+    <div class="link-card">
+      <h3>Solicitação de EPI</h3>
+      <a href="https://forms.office.com/r/heJcQ2j0UH" target="_blank">Acessar</a>
+    </div>
+
+    <div class="link-card">
+      <h3>Plataforma EAD</h3>
+      <a href="https://educativaon.energisa.com.br" target="_blank">Acessar</a>
+    </div>
+
+    <div class="link-card">
+      <h3>Prestação de Contas ADD</h3>
+      <a href="https://forms.office.com/r/E0VNk3fVGk" target="_blank">Acessar</a>
+    </div>
+  </main>
+
+  <footer>© 2025 | Central de Links • Desenvolvido por Pedro Fillype</footer>
+
+  <script>
+    function toggleSubmenu(id, element) {
+      const submenu = document.getElementById(id);
+      const arrow = element.querySelector("#arrow");
+      const isOpen = submenu.style.display === "flex";
+      submenu.style.display = isOpen ? "none" : "flex";
+      arrow.textContent = isOpen ? "▾" : "▴";
+    }
+  </script>
+</body>
+</html>
